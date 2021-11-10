@@ -1,4 +1,4 @@
-![Build Status](https://img.shields.io/github/workflow/status/GermainMichaud/Food-Order/build?label=Build&logo=githubactions&logoColor=white&style=for-the-badge)
+![Build Status](https://img.shields.io/github/workflow/status/GermainMichaud/Food-Order/CI?label=Build&logo=githubactions&logoColor=white&style=for-the-badge)
 ![React](https://shields.io/badge/-React-grey?logo=react&style=for-the-badge)
 ![NestJS](https://shields.io/badge/-NestJS-red?logo=nestjs&style=for-the-badge)
 

@@ -1,3 +1,7 @@
+![Build Status](https://img.shields.io/github/workflow/status/GermainMichaud/Food-Order/build?label=Build&logo=githubactions&logoColor=white&style=for-the-badge)
+![React](https://shields.io/badge/-React-grey?logo=react&style=for-the-badge)
+![NestJS](https://shields.io/badge/-NestJS-red?logo=nestjs&style=for-the-badge)
+
 # Food Order
 
 This project is a workspace containing an API (NestJS), a web app (React) and a mobile app (React Native).

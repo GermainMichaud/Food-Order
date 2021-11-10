@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "mobile": "apps/mobile",
+    "mobile-e2e": "apps/mobile-e2e",
+    "web": "apps/web",
+    "web-e2e": "apps/web-e2e"
+  }
+}

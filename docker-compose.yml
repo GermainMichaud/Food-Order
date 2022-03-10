@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  food-order-db:
+    image: postgres
+    restart: always
+    volumes:
+      - food-order-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres # To change for production
+      - POSTGRES_PASSWORD=SuperSecurePassword # To change for production
+      - POSTGRES_DB=food_order
+    ports:
+      - "5438:5432"
+
+volumes:
+  food-order-db-data:

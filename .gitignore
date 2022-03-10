@@ -97,3 +97,7 @@ buck-out/
 node_modules/
 
 apps/mobile-e2e/artifacts
+
+
+## Environments (.env files)
+.env

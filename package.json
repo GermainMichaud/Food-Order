@@ -10,7 +10,15 @@
   "repository": {
     "url": "https://github.com/GermainMichaud/Food-Order"
   },
-  "keywords": ["NestJS", "React", "React Native", "API", "Web App", "Mobile App", "Typescript"],
+  "keywords": [
+    "NestJS",
+    "React",
+    "React Native",
+    "API",
+    "Web App",
+    "Mobile App",
+    "Typescript"
+  ],
   "contributors": [
     {
       "email": "gmichaud.dev@gmail.com",
@@ -22,13 +30,18 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "prisma:dev:deploy": "npx prisma migrate dev --preview-feature",
+    "db:dev:up": "docker compose up food-order-db -d",
+    "db:dev:rm": "docker compose rm food-order-db -s -f -v",
+    "db:dev:restart": "npm run db:dev:rm && npm run db:dev:up && sleep 1 && npm run prisma:dev:deploy"
   },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
+    "@prisma/client": "^3.10.0",
     "core-js": "^3.6.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -94,6 +107,7 @@
     "metro-react-native-babel-preset": "0.66.2",
     "metro-resolver": "0.66.2",
     "prettier": "^2.3.1",
+    "prisma": "^3.10.0",
     "react-native-svg": "12.1.1",
     "react-native-svg-transformer": "0.14.3",
     "react-test-renderer": "17.0.2",
